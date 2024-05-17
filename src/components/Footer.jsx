@@ -1,21 +1,15 @@
-import { HStack, VStack, Heading, SimpleGrid, Box, Link, } from '@chakra-ui/react';
-
+import { VStack, Heading, SimpleGrid, Box, Link, Img } from '@chakra-ui/react';
+import Logo from '../assets/images/Vector.svg'
 
 function Footer() {
     return (
         <VStack as='footer' justify='center' pt='30px' >
             <Box bgColor='#EDEFEE' align='center' spacing={30} w='100%' pt={100} pb={100}>
 
-                <SimpleGrid spacing={10} minChildWidth='250px' width='60%' align='left' >
-                    <Box bgColor='#D9D9D9' p={10} >
+                <SimpleGrid spacing={10} minChildWidth='150px' width='60%' align='left' >
+                    <Box p={10} >
 
-                        <VStack spacing={3} align='left' pl='10px' pr='10px'>
-
-                            <HStack>
-
-                            </HStack>
-
-                        </VStack>
+                         <Img src={Logo} alt='little-lemon-logo' w='60%'></Img> 
                     </Box>
                         <Box>
                             <VStack align='left'>
