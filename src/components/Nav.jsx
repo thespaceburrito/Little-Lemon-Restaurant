@@ -17,7 +17,7 @@ function Nav() {
         <HStack as='nav' justify='center' pt='30px' pb='30px'>
             <Grid templateColumns='1fr 1fr' w={{base: '80%', md: '60%'}}>
                 <GridItem minWidth='34px'>
-                    <Box> <Img src={Logo} alt='little-lemon-logo'></Img> </Box>
+                    <Box> <Link to='/'><Img src={Logo} alt='little-lemon-logo' /></Link></Box>
                 </GridItem>
                 <GridItem align='right' alignSelf='center' >
                     <HStack spacing={10} display={displayMenu} >

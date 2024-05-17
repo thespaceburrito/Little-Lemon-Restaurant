@@ -3,7 +3,7 @@ import greekSalad from '../assets/images/greeksalad.jpg'
 import bruchetta from '../assets/images/bruchetta.jpg'
 import lemondessert from '../assets/images/lemondessert.jpeg'
 import moped from '../assets/images/moped.png'
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,7 +16,7 @@ function Menu() {
                     <SimpleGrid columns={{base: 1, md: 2}} marginBottom='30px'spacing={5}>
                         <Heading as='h3' fontSize='40px' color='#000000'>This week's specials</Heading>
                         
-                        <Button aria-label="On Click" justify='right' maxW="fit-content" colorScheme='yellow' color='#333333' fontSize='18px' size='lg' borderRadius='16px' justifySelf={{base: 'flex-start', md: 'flex-end'}}>Online Menu</Button>
+                        <Button aria-label="On Click" justify='right' maxW="fit-content" colorScheme='yellow' color='#333333' fontSize='18px' size='lg' borderRadius='16px' justifySelf={{base: 'flex-start', md: 'flex-end'}}><Link to='/construction'>Online Menu</Link></Button>
                     </SimpleGrid>
 
                     <SimpleGrid spacing={10} columns={{base: 1, md: 2, lg: 3}}>

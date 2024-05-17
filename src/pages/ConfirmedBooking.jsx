@@ -1,6 +1,7 @@
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Box, Heading, Text, VStack } from '@chakra-ui/react';
+import { Box, Heading, Text, VStack, Button} from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const ConfirmedBooking = () => {
   return (
@@ -11,6 +12,9 @@ const ConfirmedBooking = () => {
       <Heading>Your reservation has been confirmed.</Heading>
       <br />
       <Text>You will receive an email with all the details.</Text>
+      <br />
+      <br />
+      <Button aria-label="On Click" colorScheme='yellow' color='#333333' fontSize='18px' size='lg' borderRadius='16px' marginBottom={5}><Link to='/'>Back To Homepage</Link></Button>
     </Box>
     </VStack>
   );
