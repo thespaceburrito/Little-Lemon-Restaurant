@@ -1,31 +1,25 @@
 {
-    "menu" : [
-        {
-            "id": 1,
-            "title": "Greek Salad",
-            "description": "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
-            "price": "$12.99",
-            "img": "../assets/images/greeksalad.jpg'"
-
-        },
-
-        {
-            "id": 2,
-            "title": "Bruchetta",
-            "description": "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
-            "price": "$5.99",
-            "img": "../assets/images/bruchetta.jpg'"
-
-        },
-
-        {
-            "id": 2,
-            "title": "Lemon Dessert",
-            "description": "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
-            "price": "$5.00",
-            "img": "../assets/images/lemondessert.jpeg"
-
-        }
-
+    "days": [
+      {
+        "date": "2024-05-17",
+        "times": ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
+      },
+      {
+        "date": "2024-05-18",
+        "times": ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
+      },
+      {
+        "date": "2024-05-19",
+        "times": ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
+      },
+      {
+        "date": "2024-05-20",
+        "times": ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
+      },
+      {
+        "date": "2024-05-21",
+        "times": ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
+      }
     ]
-}
+  }
+  

@@ -1,16 +1,16 @@
-import { HStack, VStack, Heading, Button, Spacer, SimpleGrid, Box, Img, Text, Avatar } from '@chakra-ui/react';
+import { HStack, VStack, Heading, Button, Spacer, SimpleGrid, Box, Img, Text } from '@chakra-ui/react';
 import greekSalad from '../assets/images/greeksalad.jpg'
 import bruchetta from '../assets/images/bruchetta.jpg'
 import lemondessert from '../assets/images/lemondessert.jpeg'
 import moped from '../assets/images/moped.png'
 
-//import { useLoaderData } from 'react-router-dom';
 
 
-function Main() {
+
+function Menu() {
 
     return (
-        <VStack as='main' justify='center' pt='30px' pb='30px' minWidth='300px' >
+        
             <Box w='60%' justify='center' spacing={30} pb={200}>
                 <Box marginTop='100px'>
                     <SimpleGrid columns={{base: 1, md: 2}} marginBottom='30px'spacing={5}>
@@ -76,102 +76,10 @@ function Main() {
 
             </Box>
 
-            eslint-disable-next-line
-            Testimonials
-            <Box  bgColor='#EDEFEE' align='center' spacing={30} w='100%' pt={200} pb={200}>
-                <Box w='60%' marginBottom={20} justify='center'>
-                    <Heading as='h3' fontSize='40px' color='#000000'>Testimonials</Heading>
-                </Box>
-                <SimpleGrid columns={{base: 1, md: 2, lg: 4}} spacing={10} width='60%'>
-                    <Box bgColor='#D9D9D9' p={10} >
-
-                        <VStack spacing={3} align='left' pl='10px' pr='10px'>
-                            <Text align='left' as='div' fontSize='14px'>4.5/5</Text>
-                            <HStack>
-                                <Avatar size='lg'></Avatar>
-                                <Text as='div' fontSize='14px'>Jon Doe</Text>
-                            </HStack>
-                            <Text align='left' as='div' fontSize='14px'>Great Food!</Text>
-                        </VStack>
-                    </Box>
-                    <Box bgColor='#D9D9D9' p={10} >
-
-                        <VStack spacing={3} align='left' pl='10px' pr='10px'>
-                            <Text align='left' as='div' fontSize='14px'>4.5/5</Text>
-                            <HStack>
-                                <Avatar size='lg'></Avatar>
-
-                                <Text as='div' fontSize='14px'>Jon Doe</Text>
-                            </HStack>
-                            <Text align='left' as='div' fontSize='14px'>Great Food!</Text>
-                        </VStack>
-                    </Box>
-                    <Box bgColor='#D9D9D9' p={10} >
-
-                        <VStack spacing={3} align='left' pl='10px' pr='10px'>
-                            <Text align='left' as='div' fontSize='14px'>4.5/5</Text>
-                            <HStack>
-                                <Avatar size='lg'></Avatar>
-                                <Text as='div' fontSize='14px'>Jon Doe</Text>
-                            </HStack>
-                            <Text align='left' as='div' fontSize='14px'>Great Food!</Text>
-                        </VStack>
-                    </Box>
-                    <Box bgColor='#D9D9D9' p={10} >
-
-                        <VStack spacing={3} align='left' pl='10px' pr='10px'>
-                            <Text align='left' as='div' fontSize='14px'>4.5/5</Text>
-                            <HStack>
-                                <Avatar size='lg'></Avatar>
-                                <Text as='div' fontSize='14px'>Jon Doe</Text>
-                            </HStack>
-                            <Text align='left' as='div' fontSize='14px'>Great Food!</Text>
-                        </VStack>
-                    </Box>
 
 
-                </SimpleGrid>
-            </Box>
-
-           
-            <Box align='center' spacing={30} w='100%' pt={200} pb={200}>
-
-                <SimpleGrid spacing={10} width='60%' align='left' >
-                    <Box >
-                        <Heading as='h1' fontSize='64px' >Little Lemon</Heading>
-                        <Heading as='h3' fontSize='40px' >Chicago</Heading>
-                        <br />
-                        <Box pr={{base: 0, lg: 40}}> <Text as='p' fontSize='18px' >WAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                            <br />Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </Text>
-                        </Box>
-
-                    </Box>
-                    <Box bgColor='#D9D9D9' p={10} >
-
-                        <VStack spacing={3} align='left' pl='10px' pr='10px'>
-
-                            <HStack>
-
-                            </HStack>
-
-                        </VStack>
-                    </Box>
-
-
-
-                </SimpleGrid>
-            </Box>
-
-
-        </VStack>
     );
 }
-/*
-export const menuLoader = async () => {
-    const res = await fetch('http://localhost:3000/menu')
 
-    return res.json;
-}
-*/
 
-export default Main;
+export default Menu;

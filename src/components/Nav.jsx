@@ -22,11 +22,11 @@ function Nav() {
                 <GridItem align='right' alignSelf='center' >
                     <HStack spacing={10} display={displayMenu} >
                         <Box><Link to='/'>Home</Link></Box>
-                        <Box><Link to='/about'>About</Link></Box>
-                        <Box><Link to='/menu'>Menu</Link></Box>
+                        <Box><Link to='/construction'>About</Link></Box>
+                        <Box><Link to='/construction'>Menu</Link></Box>
                         <Box><Link to='/booking'>Reservations</Link></Box>
-                        <Box><Link to='/order-online'>Order</Link></Box>
-                        <Box><Link to='/login'>Login</Link></Box>
+                        <Box><Link to='/construction'>Order</Link></Box>
+                        <Box><Link to='/construction'>Login</Link></Box>
                     </HStack>
                     <IconButton
                         align='right'
@@ -48,11 +48,11 @@ function Nav() {
                             boxShadow='md'
                         >
                             <Box><Link to='/'>Home</Link></Box>
-                            <Box><Link to='/about'>About</Link></Box>
-                            <Box><Link to='/menu'>Menu</Link></Box>
-                            <Box><Link to='/booking'>Reservations</Link></Box>
-                            <Box><Link to='/order-online'>Order</Link></Box>
-                            <Box><Link to='/login'>Login</Link></Box>
+                        <Box><Link to='/construction'>About</Link></Box>
+                        <Box><Link to='/construction'>Menu</Link></Box>
+                        <Box><Link to='/booking'>Reservations</Link></Box>
+                        <Box><Link to='/construction'>Order</Link></Box>
+                        <Box><Link to='/construction'>Login</Link></Box>
                         </VStack>
                     </Collapse>
                 </GridItem>

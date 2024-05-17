@@ -15,11 +15,11 @@ function Footer() {
                             <VStack align='left'>
                             <Heading fontSize='20px'>Navigation</Heading>
                             <br />
-                            <Box><Link to='/about'>About</Link></Box>
-                            <Box><Link to='/menu'>Menu</Link></Box>
-                            <Box><Link to='/reservations'>Reservations</Link></Box>
-                            <Box><Link to='/order-online'>Order Online</Link></Box>
-                            <Box><Link to='/login'>Login</Link></Box>
+                            <Box><Link to='/construction'>About</Link></Box>
+                            <Box><Link to='/construction'>Menu</Link></Box>
+                            <Box><Link to='/booking'>Reservations</Link></Box>
+                            <Box><Link to='/construction'>Order Online</Link></Box>
+                            <Box><Link to='/construction'>Login</Link></Box>
                             </VStack>
                             </Box>
                             <Box>
@@ -27,9 +27,9 @@ function Footer() {
                             <VStack align='left'>
                             <Heading fontSize='20px'>Contact</Heading>
                             <br />
-                            <Box><Link to='/about'>Address</Link></Box>
-                            <Box><Link to='/menu'>Number</Link></Box>
-                            <Box><Link to='/reservations'>Email</Link></Box>
+                            <Box><Link to='/'>Address</Link></Box>
+                            <Box><Link to='/'>Number</Link></Box>
+                            <Box><Link to='/'>Email</Link></Box>
                             </VStack>
                             </Box>
                             <Box>
@@ -37,9 +37,9 @@ function Footer() {
                             <Box>
                             <Heading fontSize='20px' >Social Media Links</Heading>
                             <br />
-                            <Box><Link to='/about'>Instagram</Link></Box>
-                            <Box><Link to='/menu'>Facebook</Link></Box>
-                            <Box><Link to='/reservations'>Twitter</Link></Box>
+                            <Box><Link to='/'>Instagram</Link></Box>
+                            <Box><Link to='/'>Facebook</Link></Box>
+                            <Box><Link to='/'>Twitter</Link></Box>
                             </Box>
                             </VStack>
                             </Box>

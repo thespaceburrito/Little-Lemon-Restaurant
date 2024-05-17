@@ -14,8 +14,11 @@ import {
   Divider
 } from "@chakra-ui/react";
 
-const BookingForm = ({ availableTimes, dispatch }) => {
+const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
   const validationSchema = Yup.object({
+    firstname: Yup.string().required("Please enter your first name"),
+    lastname: Yup.string().required("Please enter your last name"),
+    email: Yup.string().email("Invalid email address").required("Please enter your email address"),
     date: Yup.string().required("Please choose a date"),
     time: Yup.string().required("Please choose a time"),
     guests: Yup.number()
@@ -27,6 +30,9 @@ const BookingForm = ({ availableTimes, dispatch }) => {
 
   const formik = useFormik({
     initialValues: {
+      firstname: "",
+      lastname: "",
+      email: "",
       date: "",
       time: "",
       guests: 1,
@@ -35,14 +41,15 @@ const BookingForm = ({ availableTimes, dispatch }) => {
     validationSchema,
     onSubmit: (values, { resetForm }) => {
       console.log("Form submitted", values);
-      dispatch({ type: 'UPDATE_TIMES', payload: values.date });
+      submitForm({ values });
+      dispatch(values.date);
       resetForm();
     },
   });
 
-  const handleDateChange = (e) => {
+  const handleDateChange = async (e) => {
     formik.handleChange(e);
-    dispatch({ type: 'UPDATE_TIMES', payload: e.target.value });
+    dispatch({ type: 'UPDATE_TIMES', payload: e.target.value })
   };
 
   return (
@@ -50,13 +57,46 @@ const BookingForm = ({ availableTimes, dispatch }) => {
       <Box
         as="form"
         display="grid"
-        w='60%' 
-        spacing={30} 
+        w='60%'
+        spacing={30}
         gap="20px"
         onSubmit={formik.handleSubmit}
       >
         <Heading as='h1' fontSize='40px' color='#000'>Reserve a Table</Heading>
         <Divider />
+        <FormControl isInvalid={formik.touched.firstname && !!formik.errors.firstname} isRequired>
+          <FormLabel htmlFor="firstname">First Name</FormLabel>
+          <Input
+            type="text"
+            id="firstname"
+            {...formik.getFieldProps('firstname')}
+          />
+          {formik.touched.firstname && formik.errors.firstname ? (
+            <Text color="red.500">{formik.errors.firstname}</Text>
+          ) : null}
+        </FormControl>
+        <FormControl isInvalid={formik.touched.lastname && !!formik.errors.lastname} isRequired>
+          <FormLabel htmlFor="lastname">Last Name</FormLabel>
+          <Input
+            type="text"
+            id="lastname"
+            {...formik.getFieldProps('lastname')}
+          />
+          {formik.touched.lastname && formik.errors.lastname ? (
+            <Text color="red.500">{formik.errors.lastname}</Text>
+          ) : null}
+        </FormControl>
+        <FormControl isInvalid={formik.touched.email && !!formik.errors.email} isRequired>
+          <FormLabel htmlFor="email">Email Address</FormLabel>
+          <Input
+            type="email"
+            id="email"
+            {...formik.getFieldProps('email')}
+          />
+          {formik.touched.email && formik.errors.email ? (
+            <Text color="red.500">{formik.errors.email}</Text>
+          ) : null}
+        </FormControl>
         <FormControl isInvalid={formik.touched.date && !!formik.errors.date} isRequired>
           <FormLabel htmlFor="res-date">Choose date</FormLabel>
           <Input
@@ -111,7 +151,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
             <option value="Anniversary">Anniversary</option>
           </Select>
         </FormControl>
-        <Button type="submit" colorScheme="yellow">
+        <Button type="submit" colorScheme="yellow" borderRadius='16px'>
           Make Your Reservation
         </Button>
       </Box>
