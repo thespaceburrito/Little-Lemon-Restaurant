@@ -1,10 +1,10 @@
-# Little lemon restaurant online Reservation Capstone - Jonathan Obi
+# Little Lemon Restaurant Online Table Reservation Capstone
 
 ## Description
 Hello
 
 This is a capstone project for the Meta Front End Development course, 
-developed using React hooks, HTML, and CSS.
+developed using React hooks, HTML, and Chakra UI.
 
 
 ## Technologies Used
