@@ -14,4 +14,11 @@ This project was developed using the following technologies:
 - Chakra UI: Used for styling the web pages
 - React hooks: Used to manage state and handle user interactions
 
+## To Start
+Open  Terminal
+cd to project repository
+npm install
+npm start
+
+
 
