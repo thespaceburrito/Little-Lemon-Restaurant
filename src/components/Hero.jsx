@@ -15,7 +15,7 @@ function Hero() {
                         <Text as='p' color='#EDEFEE' fontSize='18px'>We are a family owned Mediterranean restaurant, <br />focused on traditional recipes served with a <br />modern twist.</Text>
                         <br />
                         <br />
-                        <Button colorScheme='yellow' color='#333333' fontSize='18px' size='lg' borderRadius='16px' marginBottom={5}>Reserve a Table</Button>
+                        <Button aria-label="On Click" colorScheme='yellow' color='#333333' fontSize='18px' size='lg' borderRadius='16px' marginBottom={5}>Reserve a Table</Button>
                     </GridItem>
                     <GridItem h='450px'  align='right'>
                         <Img w='100% ' h='500px' src={restaurantFood} alt='little-lemon-food' borderRadius={16} objectFit='cover'></Img>

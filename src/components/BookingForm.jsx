@@ -151,7 +151,7 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
             <option value="Anniversary">Anniversary</option>
           </Select>
         </FormControl>
-        <Button type="submit" colorScheme="yellow" borderRadius='16px'>
+        <Button type="submit" colorScheme="yellow" borderRadius='16px' aria-label="On Click">
           Make Your Reservation
         </Button>
       </Box>
