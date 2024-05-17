@@ -3,7 +3,7 @@ import { HStack, VStack, Heading, SimpleGrid, Box, Text, Avatar } from '@chakra-
 
 export default function Testimonial() {
     return (
-        <Box  bgColor='#EDEFEE' align='center' spacing={30} w='100%' pt={200} pb={200}>
+        <Box as='section'  bgColor='#EDEFEE' align='center' spacing={30} w='100%' pt={200} pb={200}>
         <Box w='60%' marginBottom={20} justify='center'>
             <Heading as='h3' fontSize='40px' color='#000000'>Testimonials</Heading>
         </Box>

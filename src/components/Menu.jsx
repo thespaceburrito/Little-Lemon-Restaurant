@@ -11,7 +11,7 @@ function Menu() {
 
     return (
         
-            <Box w='60%' justify='center' spacing={30} pb={200}>
+            <Box as='section' w='60%' justify='center' spacing={30} pb={200}>
                 <Box marginTop='100px'>
                     <SimpleGrid columns={{base: 1, md: 2}} marginBottom='30px'spacing={5}>
                         <Heading as='h3' fontSize='40px' color='#000000'>This week's specials</Heading>

@@ -53,7 +53,7 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
   };
 
   return (
-    <VStack as='main' justify='center' pt={20} pb={20} >
+    <VStack as='section' justify='center' pt={20} pb={20} >
       <Box
         as="form"
         display="grid"

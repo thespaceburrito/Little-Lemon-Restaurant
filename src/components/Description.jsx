@@ -4,7 +4,7 @@ import restaurantFood from '../assets/images/restaurantFood.jpg'
 
 export default function Description() {
     return (
-        <Box align='center' spacing={30} w='100%' pt={200} pb={200} >
+        <Box  as='section' align='center' spacing={30} w='100%' pt={200} pb={200} >
 
         <SimpleGrid spacing={10} width='60%' align='left' columns={{base: 1, md: 2}} >
             <Box  alignSelf='center'>
