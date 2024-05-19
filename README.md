@@ -15,10 +15,10 @@ This project was developed using the following technologies:
 - React hooks: Used to manage state and handle user interactions
 
 ## To Start
-Open  Terminal
-cd to project repository
-npm install
-npm start
+- Open  Terminal
+- cd to project repository
+- npm install
+- npm start
 
 
 
