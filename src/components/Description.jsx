@@ -4,9 +4,9 @@ import restaurantFood from '../assets/images/restaurantFood.jpg'
 
 export default function Description() {
     return (
-        <Box  as='section' align='center' spacing={30} w='100%' pt={200} pb={200} >
+        <Box  as='section' w='60%' justify='center' align='center' spacing={30}  pt={200} pb={200} >
 
-        <SimpleGrid spacing={10} width='60%' align='left' columns={{base: 1, md: 2}} >
+        <SimpleGrid spacing={10}  align='left' columns={{base: 1, md: 2}} >
             <Box  alignSelf='center'>
                 <Heading as='h1' fontSize='64px' >Little Lemon</Heading>
                 <Heading as='h3' fontSize='40px' >Chicago</Heading>
